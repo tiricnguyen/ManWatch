@@ -13,17 +13,20 @@ import lombok.NoArgsConstructor;
  *
  * @author congh
  */
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class QLSanPham {
-
+public class ChatLieuVoReponse {
     private UUID id;
     private String ma;
     private String ten;
+    private String mauSac;
+    private String moTa;
     private Integer trangThai;
-
-    public Object[] toRow(int index) {
-        return new Object[]{index, ma, ten, trangThai};
+    
+    
+    public Object[] toRow(int index){
+        return new Object[]{index,ma,ten,mauSac,moTa,trangThai};
     }
 }

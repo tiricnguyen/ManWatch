@@ -4,6 +4,7 @@
  */
 package ViewModels;
 
+import java.util.Date;
 import java.util.UUID;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,17 +17,20 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class QLMatDongHo {
+public class NhanVienReponse {
 
     private UUID id;
     private String ma;
-    private String mauSac;
-    private String hinhDangMat;
-    private String kieuMat;
-    private Float kichThuocMat;
+    private String hoVaTen;
+    private Integer gioiTinh;
+    private Date ngaySinh;
+    private String hinhAnh;
+    private Integer chucVu;
+    private String diaChi;
+    private String sdt;
     private Integer trangThai;
 
-    public Object[] toRow(int index) {
-        return new Object[]{index, ma, mauSac, hinhDangMat, kieuMat, kichThuocMat, trangThai};
+    public Object[] toRoe(int index) {
+        return new Object[]{index, ma, hoVaTen, gioiTinh, ngaySinh, hinhAnh, chucVu, diaChi, sdt, trangThai};
     }
 }

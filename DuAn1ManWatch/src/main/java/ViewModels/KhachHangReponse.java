@@ -4,6 +4,7 @@
  */
 package ViewModels;
 
+import java.util.Date;
 import java.util.UUID;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,20 +14,20 @@ import lombok.NoArgsConstructor;
  *
  * @author congh
  */
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class QLChatLieuVo {
+public class KhachHangReponse {
+
     private UUID id;
     private String ma;
-    private String ten;
-    private String mauSac;
-    private String moTa;
+    private String hoVaTen;
+    private Date ngaySinh;
+    private String sdt;
+    private String diaChi;
     private Integer trangThai;
-    
-    
-    public Object[] toRow(int index){
-        return new Object[]{index,ma,ten,mauSac,moTa,trangThai};
+
+    public Object[] toRow(int index) {
+        return new Object[]{index, ma, hoVaTen, ngaySinh, sdt, diaChi, trangThai};
     }
 }

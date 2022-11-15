@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class QLLoaiDongHo {
+public class LoaiDongHoReponse {
 
     private UUID id;
     private String ma;

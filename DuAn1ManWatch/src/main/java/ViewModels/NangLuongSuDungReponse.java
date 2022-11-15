@@ -16,17 +16,14 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class QLChetLieuDay {
+public class NangLuongSuDungReponse {
 
     private UUID id;
     private String ma;
     private String ten;
-    private String mauSac;
     private Integer trangThai;
 
-    public Object[] toRow(int index) {
-        return new Object[]{index, ma, ten, mauSac, trangThai};
-
+    public Object[] toEOw(int index) {
+        return new Object[]{index, ma, ten, trangThai};
     }
-
 }
