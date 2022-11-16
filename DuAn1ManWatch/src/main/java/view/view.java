@@ -9,6 +9,7 @@
 package view;
 
 import java.awt.FlowLayout;
+
 /**
  *
  * @author Admin
@@ -21,7 +22,7 @@ public class view extends javax.swing.JFrame {
     public view() {
         initComponents();
         setLocationRelativeTo(null);
-//        BanHangDemo pnl = new BanHangDemo();
+//        ViewBanHang pnl = new ViewBanHang();
 //        pnlCards.removeAll();
 //        pnlCards.add(pnl);
 //        pnlCards.setLayout(new FlowLayout());
@@ -50,13 +51,14 @@ public class view extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
         setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(1503, 828)
+        );
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jPanel2.setBackground(new java.awt.Color(0, 153, 255));
 
         rSButtonHover1.setBackground(new java.awt.Color(0, 153, 255));
-        rSButtonHover1.setIcon(new javax.swing.ImageIcon("E:\\DuAn1ManWatch\\src\\main\\java\\folder\\icons8_online_store_48px.png")); // NOI18N
         rSButtonHover1.setText("Bán Hàng");
         rSButtonHover1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         rSButtonHover1.addActionListener(new java.awt.event.ActionListener() {
@@ -66,7 +68,6 @@ public class view extends javax.swing.JFrame {
         });
 
         rSButtonHover2.setBackground(new java.awt.Color(0, 153, 255));
-        rSButtonHover2.setIcon(new javax.swing.ImageIcon("E:\\DuAn1ManWatch\\src\\main\\java\\folder\\icons8_product_48px.png")); // NOI18N
         rSButtonHover2.setText("Sản Phẩm");
         rSButtonHover2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         rSButtonHover2.addActionListener(new java.awt.event.ActionListener() {
@@ -76,17 +77,14 @@ public class view extends javax.swing.JFrame {
         });
 
         rSButtonHover9.setBackground(new java.awt.Color(0, 153, 255));
-        rSButtonHover9.setIcon(new javax.swing.ImageIcon("E:\\DuAn1ManWatch\\src\\main\\java\\folder\\icons8_receipt_48px_1.png")); // NOI18N
         rSButtonHover9.setText("Hóa Đơn");
         rSButtonHover9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
 
         rSButtonHover10.setBackground(new java.awt.Color(0, 153, 255));
-        rSButtonHover10.setIcon(new javax.swing.ImageIcon("E:\\DuAn1ManWatch\\src\\main\\java\\folder\\icons8_voucher_48px.png")); // NOI18N
         rSButtonHover10.setText("Voucher");
         rSButtonHover10.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
 
         rSButtonHover11.setBackground(new java.awt.Color(0, 153, 255));
-        rSButtonHover11.setIcon(new javax.swing.ImageIcon("E:\\DuAn1ManWatch\\src\\main\\java\\folder\\icons8_customer_48px.png")); // NOI18N
         rSButtonHover11.setText("Khách Hàng");
         rSButtonHover11.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         rSButtonHover11.addActionListener(new java.awt.event.ActionListener() {
@@ -96,7 +94,6 @@ public class view extends javax.swing.JFrame {
         });
 
         rSButtonHover12.setBackground(new java.awt.Color(0, 153, 255));
-        rSButtonHover12.setIcon(new javax.swing.ImageIcon("E:\\DuAn1ManWatch\\src\\main\\java\\folder\\icons8_staff_48px_1.png")); // NOI18N
         rSButtonHover12.setText("Nhân Viên");
         rSButtonHover12.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         rSButtonHover12.addActionListener(new java.awt.event.ActionListener() {
@@ -106,7 +103,6 @@ public class view extends javax.swing.JFrame {
         });
 
         rSButtonHover13.setBackground(new java.awt.Color(0, 153, 255));
-        rSButtonHover13.setIcon(new javax.swing.ImageIcon("E:\\DuAn1ManWatch\\src\\main\\java\\folder\\icons8_statistics_48px.png")); // NOI18N
         rSButtonHover13.setText("Thống Kê");
         rSButtonHover13.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         rSButtonHover13.addActionListener(new java.awt.event.ActionListener() {
@@ -116,7 +112,6 @@ public class view extends javax.swing.JFrame {
         });
 
         rSButtonHover14.setBackground(new java.awt.Color(0, 153, 255));
-        rSButtonHover14.setIcon(new javax.swing.ImageIcon("E:\\DuAn1ManWatch\\src\\main\\java\\folder\\icons8_imac_exit_48px.png")); // NOI18N
         rSButtonHover14.setText("Đăng Xuất");
         rSButtonHover14.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
 
@@ -180,6 +175,7 @@ public class view extends javax.swing.JFrame {
         );
 
         pnlCards.setBackground(new java.awt.Color(255, 255, 255));
+        pnlCards.setPreferredSize(new java.awt.Dimension(1205,741));
 
         javax.swing.GroupLayout pnlCardsLayout = new javax.swing.GroupLayout(pnlCards);
         pnlCards.setLayout(pnlCardsLayout);
@@ -227,7 +223,7 @@ public class view extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void rSButtonHover1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover1ActionPerformed
-        BanHangDemo pnl = new BanHangDemo();
+        ViewBanHang pnl = new ViewBanHang();
         pnlCards.removeAll();
         pnlCards.add(pnl);
         pnlCards.setLayout(new FlowLayout());
@@ -236,7 +232,7 @@ public class view extends javax.swing.JFrame {
     }//GEN-LAST:event_rSButtonHover1ActionPerformed
 
     private void rSButtonHover2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover2ActionPerformed
-        SanPham pnl = new SanPham();
+        ViewChiTietSanPham pnl = new ViewChiTietSanPham();
         pnlCards.removeAll();
         pnlCards.add(pnl);
         pnlCards.setLayout(new FlowLayout());
@@ -245,7 +241,7 @@ public class view extends javax.swing.JFrame {
     }//GEN-LAST:event_rSButtonHover2ActionPerformed
 
     private void rSButtonHover12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonHover12ActionPerformed
-        NhanVien pnl = new NhanVien();
+        ViewNhanVien pnl = new ViewNhanVien();
         pnlCards.removeAll();
         pnlCards.add(pnl);
         pnlCards.setLayout(new FlowLayout());
