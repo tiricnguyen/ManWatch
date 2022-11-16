@@ -37,14 +37,14 @@ public class SanPham implements Serializable{
     private String ma;
     
     @Column(name = "Ten")
-    private String Ten;
+    private String ten;
     
     @Column(name = "TrangThai")
     private int trangThai;
 
     @Override
     public String toString() {
-        return "SanPham{" + "id=" + id + ", ma=" + ma + ", Ten=" + Ten + ", trangThai=" + trangThai + '}';
+        return "SanPham{" + "id=" + id + ", ma=" + ma + ", ten=" + ten + ", trangThai=" + trangThai + '}';
     }
     
     
